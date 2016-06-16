@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA1B587D1D12EDAC00342249 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B587C1D12EDAC00342249 /* main.c */; };
+		EA1B588C1D12EDBA00342249 /* arquivo_ppm.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58831D12EDBA00342249 /* arquivo_ppm.c */; };
+		EA1B588D1D12EDBA00342249 /* convolucao.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58841D12EDBA00342249 /* convolucao.c */; };
+		EA1B588E1D12EDBA00342249 /* hough.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58851D12EDBA00342249 /* hough.c */; };
+		EA1B588F1D12EDBA00342249 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58891D12EDBA00342249 /* main.c */; };
+		EA1B58901D12EDBA00342249 /* processos.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B588B1D12EDBA00342249 /* processos.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,15 @@
 
 /* Begin PBXFileReference section */
 		EA1B58791D12EDAC00342249 /* Prova2SIMD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prova2SIMD; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA1B587C1D12EDAC00342249 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EA1B58831D12EDBA00342249 /* arquivo_ppm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arquivo_ppm.c; path = ../../../../Downloads/Imagem04/arquivo_ppm.c; sourceTree = "<group>"; };
+		EA1B58841D12EDBA00342249 /* convolucao.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = convolucao.c; path = ../../../../Downloads/Imagem04/convolucao.c; sourceTree = "<group>"; };
+		EA1B58851D12EDBA00342249 /* hough.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hough.c; path = ../../../../Downloads/Imagem04/hough.c; sourceTree = "<group>"; };
+		EA1B58861D12EDBA00342249 /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Icon"; path = "../../../../Downloads/Imagem04/Icon\n"; sourceTree = "<group>"; };
+		EA1B58871D12EDBA00342249 /* imagem */ = {isa = PBXFileReference; lastKnownFileType = file; name = imagem; path = ../../../../Downloads/Imagem04/imagem; sourceTree = "<group>"; };
+		EA1B58881D12EDBA00342249 /* img02.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = img02.ppm; path = ../../../../Downloads/Imagem04/img02.ppm; sourceTree = "<group>"; };
+		EA1B58891D12EDBA00342249 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../../../Downloads/Imagem04/main.c; sourceTree = "<group>"; };
+		EA1B588A1D12EDBA00342249 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = ../../../../Downloads/Imagem04/main.h; sourceTree = "<group>"; };
+		EA1B588B1D12EDBA00342249 /* processos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = processos.c; path = ../../../../Downloads/Imagem04/processos.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,15 @@
 		EA1B587B1D12EDAC00342249 /* Prova2SIMD */ = {
 			isa = PBXGroup;
 			children = (
-				EA1B587C1D12EDAC00342249 /* main.c */,
+				EA1B58831D12EDBA00342249 /* arquivo_ppm.c */,
+				EA1B58841D12EDBA00342249 /* convolucao.c */,
+				EA1B58851D12EDBA00342249 /* hough.c */,
+				EA1B58861D12EDBA00342249 /* Icon */,
+				EA1B58871D12EDBA00342249 /* imagem */,
+				EA1B58881D12EDBA00342249 /* img02.ppm */,
+				EA1B58891D12EDBA00342249 /* main.c */,
+				EA1B588A1D12EDBA00342249 /* main.h */,
+				EA1B588B1D12EDBA00342249 /* processos.c */,
 			);
 			path = Prova2SIMD;
 			sourceTree = "<group>";
@@ -118,7 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1B587D1D12EDAC00342249 /* main.c in Sources */,
+				EA1B588F1D12EDBA00342249 /* main.c in Sources */,
+				EA1B588C1D12EDBA00342249 /* arquivo_ppm.c in Sources */,
+				EA1B588D1D12EDBA00342249 /* convolucao.c in Sources */,
+				EA1B588E1D12EDBA00342249 /* hough.c in Sources */,
+				EA1B58901D12EDBA00342249 /* processos.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
