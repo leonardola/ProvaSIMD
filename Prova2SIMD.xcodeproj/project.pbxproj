@@ -12,6 +12,10 @@
 		EA1B589C1D12EF6E00342249 /* hough.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58931D12EF6E00342249 /* hough.c */; };
 		EA1B589D1D12EF6E00342249 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58971D12EF6E00342249 /* main.c */; };
 		EA1B589E1D12EF6E00342249 /* processos.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1B58991D12EF6E00342249 /* processos.c */; };
+		EA3216671D138CC900F3F26F /* BlackAndWhite.c in Sources */ = {isa = PBXBuildFile; fileRef = EA3216651D138CC900F3F26F /* BlackAndWhite.c */; };
+		EA32166A1D138E7700F3F26F /* Brightness.c in Sources */ = {isa = PBXBuildFile; fileRef = EA3216681D138E7700F3F26F /* Brightness.c */; };
+		EAB0DD831D1AAD0000A2521D /* Threashold.c in Sources */ = {isa = PBXBuildFile; fileRef = EAB0DD811D1AAD0000A2521D /* Threashold.c */; };
+		EAB0DD861D1AD05E00A2521D /* Negative.c in Sources */ = {isa = PBXBuildFile; fileRef = EAB0DD841D1AD05E00A2521D /* Negative.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +41,14 @@
 		EA1B58971D12EF6E00342249 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		EA1B58981D12EF6E00342249 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		EA1B58991D12EF6E00342249 /* processos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = processos.c; sourceTree = "<group>"; };
+		EA3216651D138CC900F3F26F /* BlackAndWhite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BlackAndWhite.c; sourceTree = "<group>"; };
+		EA3216661D138CC900F3F26F /* BlackAndWhite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackAndWhite.h; sourceTree = "<group>"; };
+		EA3216681D138E7700F3F26F /* Brightness.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Brightness.c; path = ../Brightness.c; sourceTree = "<group>"; };
+		EA3216691D138E7700F3F26F /* Brightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Brightness.h; path = ../Brightness.h; sourceTree = "<group>"; };
+		EAB0DD811D1AAD0000A2521D /* Threashold.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Threashold.c; sourceTree = "<group>"; };
+		EAB0DD821D1AAD0000A2521D /* Threashold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Threashold.h; sourceTree = "<group>"; };
+		EAB0DD841D1AD05E00A2521D /* Negative.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Negative.c; sourceTree = "<group>"; };
+		EAB0DD851D1AD05E00A2521D /* Negative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Negative.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,8 @@
 		EA1B587B1D12EDAC00342249 /* Prova2SIMD */ = {
 			isa = PBXGroup;
 			children = (
+				EA3216681D138E7700F3F26F /* Brightness.c */,
+				EA3216691D138E7700F3F26F /* Brightness.h */,
 				EA1B58911D12EF6E00342249 /* arquivo_ppm.c */,
 				EA1B58921D12EF6E00342249 /* convolucao.c */,
 				EA1B58931D12EF6E00342249 /* hough.c */,
@@ -78,6 +92,12 @@
 				EA1B58971D12EF6E00342249 /* main.c */,
 				EA1B58981D12EF6E00342249 /* main.h */,
 				EA1B58991D12EF6E00342249 /* processos.c */,
+				EA3216651D138CC900F3F26F /* BlackAndWhite.c */,
+				EA3216661D138CC900F3F26F /* BlackAndWhite.h */,
+				EAB0DD811D1AAD0000A2521D /* Threashold.c */,
+				EAB0DD821D1AAD0000A2521D /* Threashold.h */,
+				EAB0DD841D1AD05E00A2521D /* Negative.c */,
+				EAB0DD851D1AD05E00A2521D /* Negative.h */,
 			);
 			path = Prova2SIMD;
 			sourceTree = "<group>";
@@ -138,7 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB0DD861D1AD05E00A2521D /* Negative.c in Sources */,
+				EA32166A1D138E7700F3F26F /* Brightness.c in Sources */,
 				EA1B589D1D12EF6E00342249 /* main.c in Sources */,
+				EA3216671D138CC900F3F26F /* BlackAndWhite.c in Sources */,
+				EAB0DD831D1AAD0000A2521D /* Threashold.c in Sources */,
 				EA1B589C1D12EF6E00342249 /* hough.c in Sources */,
 				EA1B589E1D12EF6E00342249 /* processos.c in Sources */,
 				EA1B589B1D12EF6E00342249 /* convolucao.c in Sources */,
@@ -263,6 +287,7 @@
 				EA1B58821D12EDAC00342249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

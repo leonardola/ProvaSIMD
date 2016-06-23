@@ -13,6 +13,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include "emmintrin.h"
+#include "xmmintrin.h"
 
 #define PROCNUM 4 // Número de processadores
 #define COLORIDO 1
@@ -20,7 +22,7 @@
 #define PI 3.1415926535
 #define SQR(x) ((x)*(x))
 
-#define CREATOR "SEU NOME"
+#define CREATOR "Leonardo Lopes de Albuquerque"
 #define RGB_COMPONENT_COLOR 255
 #define GRAY_COLOR 255
 
@@ -44,12 +46,9 @@ void writePPM(const char *filename, PPMImage *img, byte TIPO_IMAGEM );
 // processos.c:
 int MIN(int X, int Y);
 int MAX(int X, int Y);
-PPMImage *converteBW(PPMImage *img);
 void *histograma (PPMImage *histImage);
 PPMImage *negativo (PPMImage *img);
 PPMImage *aplicaSepia(PPMImage *img);
-PPMImage *aumentaBrilho(PPMImage *img, unsigned char valor);
-PPMImage *aplicaThresold(PPMImage *img, unsigned char valor);
 
 //convolucao.c:
 PPMImage *convolucao (PPMImage *im, int mask[3][3], int MASK_COLUNAS, int MASK_LINHAS);
@@ -61,5 +60,14 @@ PPMImage *processImageHough (float ** x, int nr, int nc);
 PPMImage *hough(PPMImage *image);
 float **houghTransformLines(PPMImage *imgHough);
 
+//BlackAndWhite.c
+PPMImage *converteBW(PPMImage *img);
+
+
+//Brightness.c
+PPMImage *aumentaBrilho(PPMImage *img, unsigned char valor);
+
+//Thresold.c
+PPMImage *aplicaThresold(PPMImage *img, unsigned char valor);
 
 #endif /* main_h */
