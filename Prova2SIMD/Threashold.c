@@ -34,20 +34,19 @@ PPMImage *aplicaThresold(PPMImage *img, unsigned char valor)
     imgThresold->width = img->width;
     imgThresold->height = img->height;
     
-    // SEÇÃO PASSÍVEL DE OTIMIZAÇÃO
-    
     __m128i pixel128;
-    //0 é o centro assim como o 127 era no algoritmo original, aparentemente(funciona!)
+    //0 aparentemente é o centro assim como o 127 era no algoritmo original(funciona!)
     //passando só valor a imagem fica quase toda branca
     __m128i medium = _mm_set1_epi8(valor-127);
     
     fprintf(stderr, "Aplicando o thresold...");
     for ( i = 0; i < (img->width * img->height); i+=5 ) {
-        
+        //carrega de 5 em 5 pixels
         pixel128 = _mm_loadu_si128((__m128i *) &img->dataBW[i]);
         //thereshold
         pixel128 = _mm_cmplt_epi8 (pixel128, medium);
         
+        //salva, o ultimo subpixels será sobre escrito no próximo loop
         _mm_storeu_si128((__m128i *) &imgThresold->dataBW[i], pixel128);
         
     }

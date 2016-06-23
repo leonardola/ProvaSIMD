@@ -37,13 +37,13 @@ PPMImage *aumentaBrilho(PPMImage *img, unsigned char valor){
     // SEÇÃO PASSÍVEL DE OTIMIZAÇÃO
     fprintf(stderr, "Aplicando brilho a mais...");
     for ( i = 0; i < (img->width * img->height); i+= 5 ) { 
-        
+        //carrega
         pixel128i = _mm_loadu_si128((__m128i*) &img->data[i]);
         //evita overflow
         pixel128i = _mm_min_epu8(max128i, pixel128i);
         //aumenta o brilho
         pixel128i = _mm_add_epi8(pixel128i, value128i);
-        
+        //salva
         _mm_storeu_si128((__m128i*) &imgBrilho->data[i], pixel128i);
         
     }
